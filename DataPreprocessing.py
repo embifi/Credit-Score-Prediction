@@ -29,4 +29,8 @@ np.savetxt("X_test.csv", X_test, delimiter=",")
 np.savetxt("Y_train.csv", Y_train, delimiter=",")
 np.savetxt("Y_test.csv", Y_test, delimiter=",")
 
-def 
+def input(data):
+    X_input = data.to_numpy()
+    X_input = scaler.transform(X_input)
+    np.savetxt("X_input.csv", X_input, delimiter=",")
+    return
